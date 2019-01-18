@@ -59,6 +59,24 @@ export RUN_NODE_CACHE_PATH="/home/username/.node_path"
 ```
 
 
+#### WSL
+
+By default, node is run from the Windows Subsystem for Linux (WSL) if is not found in the main environment. You could prioritize the WSL usage by setting the `RUN_NODE_FORCE_WSL` environment variable.
+
+```sh
+export RUN_NODE_FORCE_WSL=1
+```
+
+#### Customize the node command
+
+You could use the `RUN_NODE_CMD` environment variable to use a different command that includes the node execution.
+
+Example:
+
+```sh
+export RUN_NODE_CMD="meteor node"
+```
+
 ## Created by
 
 - [Sindre Sorhus](https://github.com/sindresorhus)
