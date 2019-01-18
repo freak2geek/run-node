@@ -3,7 +3,7 @@
 
 nodeParams="$@"
 versionNumberRegex="([0-9]{1,}\.)+[0-9]{1,}"
-nodeCmd=${RUN_NODE_CMD-"node"}
+nodeCmd=${RUN_NODE_CMD-"meteor node"}
 nodeCmdWithParams="${nodeCmd} ${nodeParams}"
 nodeVersionCmd="${nodeCmd} --version"
 
